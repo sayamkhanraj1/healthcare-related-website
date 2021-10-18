@@ -1,5 +1,6 @@
 import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, updateProfile } from '@firebase/auth';
 import React, { useState } from 'react';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
 import initializeAuthentication from '../Firebase/firebase.init';
 import './Login.css'
@@ -75,6 +76,15 @@ const Login = () => {
                 updateProfile(auth.currentUser, {displayName: name})
                 .then(result => {})
         }
+        const location = useLocation();
+        const history = useHistory();
+        const redirect_uri = location.state?.from || '/home';
+        const handleGoogleLogIn = () =>{
+                singInIUseingGoogle()
+                .then(result =>{
+                        history.push(redirect_uri);
+               })
+        }
 
          return (
                   <div>
@@ -100,7 +110,7 @@ const Login = () => {
                         </div>
                         <div className="row mb-3 text-danger">{error}</div>
                         <button className="sing-in">{isLogIn ? "Sing In" : "Sing Up"}</button><br />
-                        <button onClick={singInIUseingGoogle} className="btn btn-info mt-3">Google Sing In</button>
+                        <button onClick={handleGoogleLogIn} className="btn btn-info mt-3">Google Sing In</button>
                         </div> 
                         </div>
                         </form>
