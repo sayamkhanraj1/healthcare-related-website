@@ -1,0 +1,38 @@
+[
+         {
+          "key": 1,
+         "name": "Heart surgery",
+         "discription": "Uniquely deploy cross-unit benefits with wireless testing procedures. Collaboratively build backward compatible relationships whereas tactical paradigms.",
+         "img": "https://i.ibb.co/2MXDDD1/services-1.jpg"
+         },
+         {
+          "key": 2,
+         "name": "Valve prolapse",
+         "discription": "Quickly incentivize impactful action items before tactical collaboration and idea-sharing. Monotonically engage intellectual capital through wireless opportunities.",
+         "img": "https://i.ibb.co/6rrqP4P/services-2.jpg"
+         },
+         {
+          "key": 3,
+         "name": "Emergencies",
+         "discription": "Globally harness multimedia based collaboration and idea-sharing with backend products. Continually whiteboard superior opportunities via covalent scenarios.",
+         "img": "https://i.ibb.co/Sv6VgPb/services-3.jpg"
+         },
+         {
+          "key": 4,
+         "name": "Heart transplant",
+         "discription": "A heart transplant is a surgical procedure used to treat the most serious cases of heart disease. This is a treatment option for people who are in the end stages of heart failure.",
+         "img": "https://i.ibb.co/YZqwxzN/services-4.jpg"
+         },
+         {
+          "key": 5,
+         "name": "Valve diseases",
+         "discription": "Heart valve disorders can affect any of the valves in your heart. Your heart valves have flaps that open and close with each heartbeat, allowing blood to flow through.",
+         "img": "https://i.ibb.co/KGfvkrn/services-5.jpg"
+         },
+         {
+          "key": 6,
+         "name": "Artery Angioplasty",
+         "discription": "Angioplasty with stent placement is a minimally invasive procedure used to open narrow or blocked arteries. This procedure is used in different parts of your body.",
+         "img": "https://i.ibb.co/cyY3stg/services-6.jpg"
+         }
+]
