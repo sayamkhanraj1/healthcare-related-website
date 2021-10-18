@@ -7,7 +7,7 @@ const Doctor = (props) => {
                   <div className="card h-100">
                      <img className="img-fluid" src={img} alt="..."/>
                      <div className="card-body text-center">
-                      <h6 className="my-3">{position}</h6>
+                      <h6 className="my-3 text-muted">{position}</h6>
                       <h3 className="card-title mb-3">{name}</h3>
                       <p>{discription}</p>
                      </div>

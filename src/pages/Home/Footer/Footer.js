@@ -13,7 +13,7 @@ const Footer = () => {
               <h3>Healthy heart, healthy family</h3>
               <p>Globally harness multimedia based collaboration and idea-sharing with backend products. Continually whiteboard superior opportunities via covalent scenarios.</p>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-2">
               <div>
                        <h4>Quick Links</h4>
                 <ul>
@@ -21,6 +21,17 @@ const Footer = () => {
                   <li className="footer-menu"> Career</li>
                   <li className="footer-menu">News</li>
                   <li className="footer-menu">Contact us</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div>
+                       <h4>Pages</h4>
+                <ul>
+                  <li className="footer-menu">Pricing</li>
+                  <li className="footer-menu">Testimonials</li>
+                  <li className="footer-menu">Cost calculator</li>
+                  <li className="footer-menu">Procedures</li>
                 </ul>
               </div>
             </div>

@@ -1,10 +1,11 @@
 import { faSearch} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Service.css'
 
 const Service = (props) => {
-     const {name, discription, img}= props.service;
+     const {name, discription, img, key}= props.service;
 
      const searchIcon = <FontAwesomeIcon icon={faSearch} />
          return (
@@ -16,7 +17,9 @@ const Service = (props) => {
                       <p>{discription}</p>
                     </div>
                     <div>
-                       <button className="service-btn mb-3">{searchIcon} Find Out More</button>
+                     <Link to={`/services/${key}`}>
+                     <button  className="service-btn mb-3 text-muted">{searchIcon} Find Out More</button>
+                     </Link>
                     </div>
                   </div>
                  </div>  

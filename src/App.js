@@ -8,12 +8,15 @@ import Error from './pages/Error/Error';
 import Doctors from './pages/Home/Doctors/Doctors';
 import Updates from './pages/Home/Updates/Updates';
 import Services from './pages/Home/Services/Services';
-
-/* Heelo */
+import Login from './Login/Login/Login';
+import Serviceing from './pages/Serviceing/Serviceing/Serviceing';
+import AuthProvider from './contexts/AuthProvider';
+import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <Router>
         <Appbar />
         <Switch>
@@ -26,11 +29,17 @@ function App() {
           <Route exact path="/services">
           <Services />
           </Route>
+          <PrivateRoute exact path="/services/:serviceId">
+          <Serviceing />
+          </PrivateRoute>
           <Route exact path="/updates">
           <Updates />
           </Route>
           <Route exact path="/doctors">
           <Doctors />
+          </Route>
+          <Route exact path="/login">
+          <Login />
           </Route>
           <Route exact path="*">
           <Error/>
@@ -38,6 +47,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
+      </AuthProvider>
     </div>
   );
 }

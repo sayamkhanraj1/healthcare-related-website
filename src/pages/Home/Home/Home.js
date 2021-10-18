@@ -6,7 +6,7 @@ import Updates from '../Updates/Updates';
 
 const Home = () => {
          return (
-                  <div>
+                  <div id="home">
                       <HeroSection />
                       <Services />  
                       <Doctors />  
