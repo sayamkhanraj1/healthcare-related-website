@@ -22,6 +22,7 @@ const Appbar = () => {
                   <Link to="/services"><li className="nav-link active fw-bold fs-5">Services</li></Link>
                   <Link to="/doctors"><li className="nav-link active fw-bold fs-5">Doctors</li></Link>
                   <Link to="/updates"><li className="nav-link active fw-bold fs-5">Updates</li></Link>
+                  <Link to="/shop"><li className="nav-link active fw-bold fs-5">Shop</li></Link>
                   
                   </ul>
                   </div>

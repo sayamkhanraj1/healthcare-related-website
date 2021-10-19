@@ -9,9 +9,11 @@ import Doctors from './pages/Home/Doctors/Doctors';
 import Updates from './pages/Home/Updates/Updates';
 import Services from './pages/Home/Services/Services';
 import Login from './Login/Login/Login';
-import Serviceing from './pages/Serviceing/Serviceing/Serviceing';
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
+import SingleService from './pages/Serviceing/SingleService/SingleService';
+import Shop from './pages/Shop/Shop';
+
 
 function App() {
   return (
@@ -30,7 +32,10 @@ function App() {
           <Services />
           </Route>
           <PrivateRoute exact path="/services/:serviceId">
-          <Serviceing />
+          <SingleService />
+          </PrivateRoute>
+          <PrivateRoute exact path="/shop">
+          <Shop />
           </PrivateRoute>
           <Route exact path="/updates">
           <Updates />
