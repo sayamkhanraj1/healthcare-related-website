@@ -52,7 +52,7 @@ const Login = () => {
                 signInWithEmailAndPassword(auth, email, password)
                 .then(result =>{
                         const user = result.user;
-                        console.log(user)
+                        history.push(redirect_uri);
                         setError('');
                 })
                 .catch(error =>{
@@ -63,7 +63,7 @@ const Login = () => {
         const createNewUser = (email, password) =>{
                 createUserWithEmailAndPassword(auth, email, password)
                 .then(result =>{
-                        console.log(result.user)
+                        history.push(redirect_uri);
                         setError('');
                         setUserName();
                 })
