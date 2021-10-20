@@ -30,7 +30,7 @@ const Appbar = () => {
                   <Navbar className="justify-content-end">
                   {user?.email ?
                   <button onClick={logOut} className="logOut-btn me-4">LogOut</button>:
-                    <Link to="/login"><li className="nav-link active fw-bold fs-5  me-4">Registration</li></Link> 
+                    <Link to="/login"><li className="nav-link active fw-bold fs-5  me-4">Registration / LogIn</li></Link>
                     }
                     <Navbar.Text>
                       Signed in as : <a href="#login" className="fw-bold">{user?.displayName}</a>
