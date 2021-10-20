@@ -15,3 +15,6 @@ The web experiences are feature-packed, digitally transformative, high-performin
 
 # About our services 
 
+Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs.
+
+* Pacemaker ( tachycardia, a heartbeat that’s too fast .bradycardia, a heartbeat that’s too slow . fatigue .fainting or lightheadedness . shortness of breath. damage to vital organs. eventual death)
